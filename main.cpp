@@ -37,7 +37,7 @@ restart:
 			}
 		if (tries == maxTries) {
 			cout << "You have used all the tries, restart the program" << endl;
+			}
 		}
 	}
-}
 }
