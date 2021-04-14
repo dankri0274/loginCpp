@@ -5,12 +5,16 @@ int main() {
 	string username, passwd, passwdConf;
 	int tries = 0, maxTries = 5;
 
-	restart:
+restartAll:
 
 	cout << "Enter username: ";
 	cin >> username;
-	cout << "Register password: ";
+
+restart:
+
+  cout << "Register password: ";
 	cin >> passwd;
+
 	cout << "Confirm password: ";
 	cin >> passwdConf;
 
@@ -26,13 +30,11 @@ int main() {
 	else {
 		cout << "___LOGIN___" << endl;
 		string userLogin, passwdLogin;
-
 		while (tries < maxTries) {
-			cout << "Username: " << endl;
+			cout << "Username: ";
 			cin >> userLogin;
 			cout << "Password: ";
 			cin >> passwdLogin;
-
 			if (userLogin == username && passwdLogin == passwdConf) {
 				tries++;
 				cout << "Welcome " << username << endl;
