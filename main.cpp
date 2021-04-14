@@ -15,7 +15,7 @@ int main() {
 	cin >> passwdConf;
 
 	if (username.length() < 6) {
-		cout << endl << "Minimum length for usernae is 6 digits!" << endl << endl;
+		cout << endl << "Minimum length for username is 6 digits!" << endl << endl;
 	}
 
 	if (passwd.length() < 8 || passwdConf.length() < 8) {
